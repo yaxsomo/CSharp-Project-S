@@ -1,0 +1,48 @@
+﻿<Page x:Class="EcomDesktop.AddProduct"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:EcomDesktop"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AddProduct">
+
+    <Grid>
+
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+            <Label Grid.Row="0" Grid.Column="0" Content="Product name:" />
+        <TextBox Grid.Row="0" Grid.Column="1" x:Name="productNameTextBox" />
+
+        <Label Grid.Row="1" Grid.Column="0" Content="Product price:" />
+        <TextBox Grid.Row="1" Grid.Column="1" x:Name="productPriceTextBox" />
+
+        <Label Grid.Row="2" Grid.Column="0" Content="Product quantity:" />
+        <TextBox Grid.Row="2" Grid.Column="1" x:Name="productQuantityTextBox" />
+
+        <Label Grid.Row="3" Grid.Column="0" Content="Product supplier:" />
+        <TextBox Grid.Row="3" Grid.Column="1" x:Name="productSupplierTextBox" />
+
+        <Label Grid.Row="4" Grid.Column="0" Content="Product category:" />
+        <TextBox Grid.Row="4" Grid.Column="1" x:Name="productCategoryTextBox" />
+
+        <Button Grid.Row="5" Grid.Column="1" Content="Add Product" x:Name="addProductButton" Click="AddProduct_Click" />
+        <Button Grid.Row="6" Grid.Column="1" Content="Cancel" x:Name="cancelButton" Click="ListProducts_Navigate"/>
+    
+    </Grid>
+</Page>
